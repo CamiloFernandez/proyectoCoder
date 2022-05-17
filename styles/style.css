@@ -117,11 +117,30 @@ p {
     object-fit: cover;
 }
 
+@keyframes change-color{
+    25%{
+        color: var(--principal);
+    }
+
+    50%{
+        color: var(--seconday);
+    }
+
+    75%{
+        color: var(--light);
+    }
+
+    100%{
+        color: var(--grey);
+    }
+}
+
 .main__title {
     text-align: center;
     font-size: 3rem;
     margin: 2rem 0;
     color: var(--grey);
+    animation: change-color 3s ease 0s infinite alternate;
 }
 
 .section {
@@ -150,6 +169,7 @@ p {
     text-align: center;
     font-size: 2rem;
     margin: 2rem 0;
+    animation: change-color 3s ease 0s infinite alternate;
 }
 
 .whatsapp {
