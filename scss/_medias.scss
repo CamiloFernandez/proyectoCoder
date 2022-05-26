@@ -1,0 +1,18 @@
+/*Medias*/
+
+@media (min-width: 768px) {
+    .nav__ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .article {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .map {
+      width: 90%;
+      height: 100%;
+      margin-left: 1rem;
+    }
+}

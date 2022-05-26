@@ -1,0 +1,55 @@
+/*Globals*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #c3c0a8;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $light;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 1.8rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    margin: 0;
+    color: $grey;
+    font-family: $font;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .rounded {
+    border-radius: 5px;
+  }
+  
+  .shadow {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  }

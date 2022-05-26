@@ -1,0 +1,31 @@
+/*Header*/
+.header {
+  margin: 1rem auto;
+  max-width: 95%;
+  min-height: 10vh;
+  background-color: $light;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header__logo {
+  width: 25rem;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.nav {
+  background-color: $principal;
+}
+
+.nav__li {
+  margin: .5rem .5rem;
+}
+
+.nav__ul {
+  flex-direction: column;
+  text-align: center;
+}
