@@ -139,9 +139,18 @@ p {
   position: relative; }
 
 .hero {
+  background-image: url(/img/img2.jpg);
   width: 100%;
   height: 45rem;
-  object-fit: cover; }
+  background-position: center center;
+  background-size: cover; }
+
+.hero__title {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px black; }
 
 .section {
   padding: 1rem 2rem; }
@@ -192,6 +201,10 @@ p {
   text-align: center;
   font-size: 2rem; }
 
+.buttons {
+  display: flex;
+  flex-direction: column; }
+
 .button {
   margin: 1rem auto;
   height: 3rem;
@@ -240,8 +253,9 @@ p {
 .input__text {
   width: 100%;
   background-color: #E5E2C2;
-  padding: 1.5rem;
-  border: 1px solid #292929; }
+  padding: 1rem;
+  border: 1px solid #292929;
+  font-size: 1.6rem; }
 
 .area {
   height: 20rem; }
@@ -271,4 +285,9 @@ p {
   .map {
     width: 90%;
     height: 100%;
-    margin-left: 1rem; } }
+    margin-left: 1rem; }
+  .buttons {
+    display: flex;
+    flex-direction: row-reverse; }
+  .button {
+    margin: 1rem; } }
