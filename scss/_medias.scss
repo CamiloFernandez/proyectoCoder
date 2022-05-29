@@ -1,27 +1,33 @@
 /*Medias*/
 
 @media (min-width: 768px) {
-    .nav__ul {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-    .article {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .map {
-      width: 90%;
-      height: 100%;
-      margin-left: 1rem;
-    }
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+    max-height: 6.2rem;
+    box-shadow: none;
+  }
 
-    .buttons{
-      display: flex;
-      flex-direction: row-reverse;
-    }
+  .toggle-menu {
+    display: none;
+  }
 
-    .button{
-      margin: 1rem;
-    }
+  .article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .map {
+    width: 90%;
+    height: 100%;
+    margin-left: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .button {
+    margin: 1rem;
+  }
 }

@@ -38,15 +38,6 @@
   transform: translateX(0);
 }
 
-@media (min-width: 768px) {
-  .main-menu {
-    flex-direction: row;
-    transform: translateY(0);
-    max-height: 6.2rem;
-    box-shadow: none;
-  }
-}
-
 .toggle-menu {
   width: 4rem;
   position: absolute;
@@ -54,12 +45,6 @@
   right: 1.5rem;
   cursor: pointer;
   z-index: 1;
-}
-
-@media (min-width:768px) {
-  .toggle-menu {
-    display: none;
-  }
 }
 
 .main-menu__item {
