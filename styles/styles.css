@@ -170,15 +170,15 @@ p {
     text-align: center; }
 
 .article-shop {
-  justify-content: space-around;
-  flex-wrap: wrap; }
+  display: grid;
+  row-gap: 2rem; }
 
 .product {
   width: 30rem;
-  height: 45rem;
+  height: 40rem;
   background-color: #ffffff;
   padding: 1rem;
-  margin: 2rem; }
+  margin: auto; }
 
 .product__name {
   text-align: center;
@@ -261,7 +261,7 @@ p {
 .whatsapp {
   position: fixed;
   bottom: 0;
-  right: 3.5rem;
+  right: 3%;
   background-color: #ffffff;
   border-radius: 25px; }
 
@@ -282,6 +282,12 @@ p {
     margin-left: 1rem; }
   .buttons {
     display: flex;
-    flex-direction: row-reverse; }
-  .button {
-    margin: 1rem; } }
+    flex-direction: row-reverse;
+    gap: 1rem; }
+  .article-shop {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem; } }
+
+@media (min-width: 768px) and (max-width: 1040px) {
+  .article-shop {
+    grid-template-columns: repeat(2, 1fr); } }
