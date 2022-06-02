@@ -1,0 +1,82 @@
+/*Header*/
+.header {
+  margin: 1rem auto;
+  max-width: 95%;
+  min-height: 10vh;
+  background-color: $light;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header__logo {
+  width: 25rem;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.main-nav {
+  width: 100%;
+  height: 6.2rem;
+  background-color: $principal;
+  z-index: 1;
+}
+
+.main-menu {
+  list-style: none;
+  background-color: $principal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(-120%);
+  transition: transform 0.3s;
+}
+
+.main-menu--show {
+  transform: translateX(0);
+}
+
+.toggle-menu {
+  width: 4rem;
+  position: absolute;
+  top: 16.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main-menu__item {
+  margin: 2rem 0
+}
+
+.main-menu__link {
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: $light;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

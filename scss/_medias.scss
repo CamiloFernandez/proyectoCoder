@@ -1,0 +1,41 @@
+/*Medias*/
+
+@media (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+    max-height: 6.2rem;
+    box-shadow: none;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .map {
+    width: 90%;
+    height: 100%;
+    margin-left: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .article-shop{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1040px){
+  .article-shop{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

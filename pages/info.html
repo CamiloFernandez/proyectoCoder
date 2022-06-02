@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Te brindamos información útil para tu salud!">
     <link rel="icon" type="image/jpg" href="../img/favicon.png" />
-    <title>Oliva Almacen Saludable</title>
+    <title>Informacion | Oliva</title>
     <!-- css -->
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
@@ -21,24 +22,31 @@
             <a href="../index.html"><img src="../img/logo1.png" alt="Logo"></a>
         </div>
 
-        <nav class="nav">
-            <ul class="nav__ul grid">
-                <li class="nav__li"> <a href="../index.html">Inicio</a></li>
-                <li class="nav__li"> <a href="../pages/tienda.html">Tienda </a> </li>
-                <li class="nav__li"> <a href="../pages/nosotros.html">Sobre Nosotros</a> </li>
-                <li class="nav__li"> <a href="../pages/info.html">Información Util</a> </li>
-                <li class="nav__li"> <a href="../pages/contacto.html">Contactanos</a> </li>
+        <nav class="main-nav bottom-rounded">
+            <div id="toggle-menu" class="toggle-menu">
+              <img src="../img/icon.png" alt="botonMenu">
+            </div>
+            <ul id="main-menu" class="main-menu bottom-rounded shadow">
+              <li class="main-menu__item active underline"><a class="main-menu__link" href="../index.html">inicio</a></li>
+              <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/tienda.html">tienda</a></li>
+              <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/nosotros.html">sobre
+                  nosotros</a></li>
+              <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/info.html">información util</a>
+              </li>
+              <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/contacto.html">contactanos</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
     </header>
 
     <!-- Main -->
 
     <main class="main rounded shadow">
 
-        <img class="hero rounded shadow" src="../img/img2.jpg" alt="">
+        <div class="hero rounded shadow">
+            <h1 class="hero__title"> Información Saludable </h1>
+          </div>
 
-        <h1 class="main__title">Info Saludable</h1>
         <section class="section">
             <h2 class="subtitle">¿Por qué son tan saludables los frutos secos?</h2>
             <article>
@@ -76,6 +84,8 @@
         <p>Todos los derechos reservados Oliva Almacen Saludable 2022</p>
     </footer>
 
+
+    <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>

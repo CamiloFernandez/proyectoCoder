@@ -2,87 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="../img/favicon.png"/>
-    <title>Oliva Almacen Saludable</title>
-    <!-- css -->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="¡Contáctate con nosotros!">
+  <link rel="icon" type="image/jpg" href="../img/favicon.png" />
+  <title> Contactanos | Oliva</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+  <!-- Header -->
 
-    <header class="header flex rounded shadow">
-        <div class="header__logo">
-            <a href="../index.html"><img src="../img/logo1.png" alt="Logo"></a>
-        </div>
-
-        <nav class="nav">
-            <ul class="nav__ul grid">
-                <li class="nav__li"> <a href="../index.html">Inicio</a></li>
-                <li class="nav__li"> <a href="../pages/tienda.html">Tienda </a> </li>
-                <li class="nav__li"> <a href="../pages/nosotros.html">Sobre Nosotros</a> </li>
-                <li class="nav__li"> <a href="../pages/info.html">Información Util</a> </li>
-                <li class="nav__li"> <a href="../pages/contacto.html">Contactanos</a> </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main -->
-
-    <main class="main rounded shadow">
-
-        <img class="hero rounded shadow" src="../img/img2.jpg" alt="">
-
-        <h1 class="main__title">Contactanos</h1>
-        <section class="section">
-            <form class="form rounded shadow">
-                <fieldset class="border-none">
-                    <legend class=" form__legend">Contactanos llenando los campos</legend>
-                    <div class="input">
-                        <label class="input__label" for="name">Nombre</label>
-                        <input class="input__text rounded" id="name" type="text" placeholder="Tu Nombre">
-                    </div>
-
-                    <div class="input">
-                        <label class="input__label" for="tel">Teléfono</label>
-                        <input class="input__text rounded" id="tel" type="tel" placeholder="Tu teléfono">
-                    </div>
-
-                    <div class="input">
-                        <label class="input__label" for="email">Correo</label>
-                        <input class="input__text rounded" id="email" type="email" placeholder="Tu Email">
-                    </div>
-
-                    <div class="input">
-                        <label class="input__label" for="message">Mensaje</label>
-                        <textarea class="input__text area rounded" id="message"></textarea>
-                    </div>
-                    <input class="button button__text" type="submit">
-                </fieldset>
-            </form>
-        </section>
-         <div class="whatsapp">
-        <a href="https://wa.me/541128533922" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#4ACA59" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-              </svg>
-        </a>
+  <header class="header flex rounded shadow">
+    <div class="header__logo">
+      <a href="../index.html"><img src="../img/logo1.png" alt="Logo"></a>
     </div>
-    </main>
 
-    <!-- Footer -->
+    <nav class="main-nav bottom-rounded">
+      <div id="toggle-menu" class="toggle-menu">
+        <img src="../img/icon.png" alt="botonMenu">
+      </div>
+      <ul id="main-menu" class="main-menu bottom-rounded shadow">
+        <li class="main-menu__item active underline"><a class="main-menu__link" href="../index.html">inicio</a></li>
+        <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/tienda.html">tienda</a></li>
+        <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/nosotros.html">sobre
+            nosotros</a></li>
+        <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/info.html">información util</a>
+        </li>
+        <li class="main-menu__item underline"><a class="main-menu__link" href="../pages/contacto.html">contactanos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer class="footer  rounded shadow">
-        <p>Todos los derechos reservados Oliva Almacen Saludable 2022</p>
-    </footer>
+  <!-- Main -->
 
+  <main class="main rounded shadow">
+
+    <div class="hero rounded shadow">
+      <h1 class="hero__title"> Contactanos </h1>
+    </div>
+
+    <h2 class="subtitle">Lorem, ipsum.</h2>
+    <section class="section">
+      <form class="form rounded shadow">
+        <fieldset class="border-none">
+          <legend class=" form__legend">Contactanos llenando los campos</legend>
+          <div class="input">
+            <label class="input__label" for="name">Nombre</label>
+            <input class="input__text rounded" id="name" type="text" placeholder="Tu Nombre">
+          </div>
+
+          <div class="input">
+            <label class="input__label" for="tel">Teléfono</label>
+            <input class="input__text rounded" id="tel" type="tel" placeholder="Tu teléfono">
+          </div>
+
+          <div class="input">
+            <label class="input__label" for="email">Correo</label>
+            <input class="input__text rounded" id="email" type="email" placeholder="Tu Email">
+          </div>
+
+          <div class="input">
+            <label class="input__label" for="message">Mensaje</label>
+            <textarea class="input__text area rounded" id="message"></textarea>
+          </div>
+          <div class="buttons">
+            <input class="button button__text rounded" type="submit">
+            <input class="button button__text rounded" type="reset">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <div class="whatsapp">
+      <a href="https://wa.me/541128533922" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="48"
+          height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#4ACA59" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path
+            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+        </svg>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer  rounded shadow">
+    <p>Todos los derechos reservados Oliva Almacen Saludable 2022</p>
+  </footer>
+
+
+  <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>
