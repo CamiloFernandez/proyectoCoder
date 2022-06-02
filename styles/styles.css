@@ -258,11 +258,21 @@ p {
   margin-top: 1rem;
   padding: 2rem; }
 
-.whatsapp {
+.redes, .whatsapp, .facebook, .twitch {
   position: fixed;
-  bottom: 0;
+  bottom: 0.5%;
+  background-color: #ffffff; }
+
+.whatsapp {
   right: 3%;
-  background-color: #ffffff;
+  border-radius: 25px; }
+
+.facebook {
+  right: 9%;
+  border-radius: 26px; }
+
+.twitch {
+  right: 15%;
   border-radius: 25px; }
 
 /*Medias*/

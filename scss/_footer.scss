@@ -8,11 +8,35 @@
     padding: 2rem;
   }
 
-.whatsapp {
-    position: fixed;
-    bottom: 0;
-    right: 3%;
-    background-color: $white;
-    border-radius: 25px;
+  $redes:(position:fixed,bottom:.5%,bgColor:$white);
+
+  @mixin redes($right,$border) {
+    right: $right;
+    border-radius: $border;
   }
+
+  .redes{
+    position: map-get($redes,position);
+    bottom: map-get($redes,bottom);
+    background-color: map-get($redes,bgColor);
+  }
+
+  .whatsapp{
+    @extend.redes;
+    @include redes(3%,25px)
+  }
+
+  .facebook{
+    @extend .redes;
+    @include redes(9%, 26px )
+  }
+
+  .twitch{
+    @extend.redes;
+    @include redes(15%, 25px )
+  }
+
+
+
+
 
