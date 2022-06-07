@@ -1,18 +1,28 @@
 /* Footer */
 
 .footer {
-    margin: auto;
-    width: 95%;
-    background-color: $light;
-    margin-top: 1rem;
-    padding: 2rem;
-  }
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 95%;
+  background-color: $light;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
 
-.whatsapp {
-    position: fixed;
-    bottom: 0;
-    right: 3%;
-    background-color: $white;
-    border-radius: 25px;
-  }
+.footer__text{
+  text-align: center;
+}
 
+.redes{
+  justify-content: center;
+  width: 40%;
+  margin:1rem 0;
+}
+
+.red {
+  background-color: $white;
+  border-radius: 25px;
+  margin: 0 2rem;
+}
