@@ -2,7 +2,6 @@
 .header {
   margin: 1rem auto;
   max-width: 95%;
-  min-height: 10vh;
   background-color: $light;
   flex-direction: column;
   position: sticky;
@@ -14,6 +13,17 @@
   width: 25rem;
   align-self: center;
   margin: 2rem 0;
+  display: none;
+}
+
+.logo-sm{
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  background-color: $white;
+  z-index: 1;
 }
 
 .main-nav {
@@ -26,7 +36,6 @@
 .main-menu {
   list-style: none;
   background-color: $principal;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -41,7 +50,7 @@
 .toggle-menu {
   width: 4rem;
   position: absolute;
-  top: 16.5rem;
+  top: 1.5rem;
   right: 1.5rem;
   cursor: pointer;
   z-index: 1;

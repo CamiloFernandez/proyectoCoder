@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/styles.scss styles/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",

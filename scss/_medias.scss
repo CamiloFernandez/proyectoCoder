@@ -8,12 +8,22 @@
     box-shadow: none;
   }
 
+  .logo-sm{
+    display: none;
+  }
+
+  .header__logo{
+    display: block;
+  }
+
   .toggle-menu {
     display: none;
   }
 
   .article {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "subtitle subtitle" 
+    "text item";
   }
 
   .map {
