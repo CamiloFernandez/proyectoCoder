@@ -100,12 +100,50 @@
   text-align: center;
   border: .2rem solid $grey;
   cursor: pointer;
+  text-transform: uppercase;
+  font-size: 2rem;
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 5px #000;
+  }
 }
 
 .button__text {
-  font-size: 2rem;
   color: $grey;
-  grid-area: text;
+  margin: .5rem;
+  font-weight: bold;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000, .3);
+  transform: scale(0);
+  transition: transform .3s;
+  z-index: 50;
+}
+
+.modal--show{
+  transform: scale(1);
+}
+
+.modal__content{
+   background-color: $white;
+   width: 30rem;
+   height:20rem;
+   padding: 1rem;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.modal__title{
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .article{
@@ -124,8 +162,6 @@
   width: 100%;
   height: 30rem;
 }
-
-
 
 .form {
   margin: auto;
