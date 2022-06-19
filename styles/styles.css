@@ -28,7 +28,7 @@ img {
 p {
   margin: 1rem 0;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #292929;
   font-family: "Roboto", sans-serif; }
 
@@ -61,7 +61,7 @@ p {
 .header__logo {
   width: 25rem;
   align-self: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: none; }
 
 .logo-sm {
@@ -162,7 +162,7 @@ p {
 
 .subtitle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 2rem 0;
   grid-area: subtitle; }
 
@@ -213,8 +213,8 @@ p {
   text-align: center;
   border: 0.2rem solid #292929;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-transform: uppercase; }
   .button:hover {
     transform: translateY(-3px);
     box-shadow: 5px 5px 5px #000; }
@@ -222,7 +222,8 @@ p {
 .button__text {
   color: #292929;
   margin: .5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .modal {
   position: fixed;
@@ -249,11 +250,15 @@ p {
   justify-content: space-around; }
 
 .modal__title {
-  font-size: 2.5rem;
-  text-align: center; }
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase; }
 
 .article {
   grid-template-areas: "subtitle" "text" "item"; }
+
+.article-map {
+  flex-direction: column; }
 
 .article__text {
   width: 100%;
@@ -261,10 +266,11 @@ p {
 
 .map {
   width: 100%;
-  height: 30rem; }
+  height: 30rem;
+  align-self: center; }
 
 .form {
-  margin: auto;
+  margin: 1rem auto;
   background-color: #ffffff;
   padding: 1rem;
   width: 100%; }
@@ -337,10 +343,6 @@ p {
     display: none; }
   .article {
     grid-template-areas: "subtitle subtitle"  "text item"; }
-  .map {
-    width: 90%;
-    height: 100%;
-    margin-left: 1rem; }
   .buttons {
     display: flex;
     flex-direction: row-reverse;

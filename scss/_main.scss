@@ -37,7 +37,7 @@
 
 .subtitle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 2rem 0;
   grid-area: subtitle;
 }
@@ -100,8 +100,8 @@
   text-align: center;
   border: .2rem solid $grey;
   cursor: pointer;
-  text-transform: uppercase;
   font-size: 2rem;
+  text-transform: uppercase;
   &:hover{
     transform: translateY(-3px);
     box-shadow: 5px 5px 5px #000;
@@ -112,6 +112,7 @@
   color: $grey;
   margin: .5rem;
   font-weight: bold;
+   text-transform: uppercase;
 }
 
 .modal{
@@ -142,8 +143,9 @@
 }
 
 .modal__title{
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .article{
@@ -151,6 +153,10 @@
   "subtitle"
   "text"
   "item";
+}
+
+.article-map{
+  flex-direction: column;
 }
 
 .article__text {
@@ -161,10 +167,11 @@
 .map {
   width: 100%;
   height: 30rem;
+  align-self: center;
 }
 
 .form {
-  margin: auto;
+  margin: 1rem auto;
   background-color: $white;
   padding: 1rem;
   width: 100%;
