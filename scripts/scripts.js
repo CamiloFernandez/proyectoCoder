@@ -11,35 +11,12 @@ toggleMenuElement.addEventListener('click', () => {
 
 const button = document.getElementById('modalButton');
 const modal = document.getElementById('modal');
-const showButtonUno = document.querySelector('.uno');
-const showButtonDos = document.querySelector('.dos');
-const showButtonTres = document.querySelector('.tres');
-const showButtonCuatro = document.querySelector('.cuatro');
-const showButtonCinco = document.querySelector('.cinco');
-const showButtonSeis = document.querySelector('.seis');
+const showButton = document.getElementById('shop');
 
-showButtonUno.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
-})
-
-showButtonDos.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
-})
-
-showButtonTres.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
-})
-
-showButtonCuatro.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
-})
-
-showButtonCinco.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
-})
-
-showButtonSeis.addEventListener('click', () =>{
-    modal.classList.add('modal--show')
+showButton.addEventListener('click', (e) =>{
+    if(e.target.classList.contains('btn')){
+        modal.classList.add('modal--show')
+    }
 })
 
 button.addEventListener('click', () => {

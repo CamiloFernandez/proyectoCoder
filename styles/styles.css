@@ -217,7 +217,10 @@ p {
   text-transform: uppercase; }
   .button:hover {
     transform: translateY(-3px);
-    box-shadow: 5px 5px 5px #000; }
+    box-shadow: 2px 2px 2px #000; }
+    .button:hover:active {
+      transform: translateY(0);
+      box-shadow: none; }
 
 .button__text {
   color: #292929;

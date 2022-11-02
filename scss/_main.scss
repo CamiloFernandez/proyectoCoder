@@ -104,7 +104,12 @@
   text-transform: uppercase;
   &:hover{
     transform: translateY(-3px);
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 2px 2px 2px #000;
+
+  &:active{
+    transform: translateY(0);
+    box-shadow: none;
+  }
   }
 }
 
